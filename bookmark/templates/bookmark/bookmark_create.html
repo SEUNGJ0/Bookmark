@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Bookmark Add{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type = "submit"  class = "btn btn-info btn-sm">Add</button>
+    <button type = "button" onclick="location.href='/bookmark' ">Go Home</button>
+</form>
+{% endblock %}
